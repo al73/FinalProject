@@ -1,0 +1,49 @@
+.navbar-inverse
+{
+	background-color: #8F100E;
+	border: none;	
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand
+{
+	color: #ffffff;	
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus
+{
+	background-color:#ffffff;
+	color: #8F100E;
+	border-color: #ffffff;	
+}
+
+.jumbotron
+{
+	background-image: url("http://usabilitygeek.com/wp-content/uploads/2012/04/HTML-Guidelines-Usability-SEO-CSS.jpg");
+	background-size: cover;	
+}
+
+.jumbotron h1, .jumbotron .h1, #jumbotronsubtext
+{
+	background-color: #ffffff;	
+}
+
+#contactpage
+{
+	padding-top: 20px;	
+}
+
+#contactform
+{
+	border: 2px solid;
+	border-color: #DCDCDC;
+}	
+
+#contact
+{
+	padding: 15px 15px 15px 15px;	
+}
+
+#ContactHeading
+{
+	text-align:center;	
+}
