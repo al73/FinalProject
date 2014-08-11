@@ -53,7 +53,7 @@
 	max-height: 112px;
 }
 
-.btn-primary
+.btn-primary, .btn-primary:hover, .login, .login:hover
 {
 	background-color: #8F100E;
 	border-color: #FFFFFF;	
@@ -71,4 +71,16 @@ h6
 .changes
 {
 	color: red;
+}
+
+.signup, .signup:hover
+{
+	background-color: #3071a9;
+	border-color: #285e8e;
+}
+
+#homepagesignup, #homepagesignup:hover 
+{
+	background-color: #3071a9;
+	border-color: #285e8e;
 }
