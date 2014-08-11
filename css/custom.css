@@ -43,7 +43,7 @@
 	padding: 15px 15px 15px 15px;	
 }
 
-#ContactHeading, .GetStartedDownload, #ContactDescription
+#ContactHeading, .GetStartedDownload, #ContactDescription, .iframe
 {
 	text-align:center;	
 }
@@ -83,4 +83,9 @@ h6
 {
 	background-color: #3071a9;
 	border-color: #285e8e;
+}
+
+.socialnetwork
+{
+	max-height: 25px;
 }
