@@ -67,15 +67,96 @@
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-8">
+          <a class="anchor" id="BeginnersTutorial"></a>
           <h2>Beginner's Tutorial</h2>
           <p>In this tutorial, you will learn how to create a one page website dedicated to you. It will use basic HTML5 and CSS3 concepts and build upon your understanding of the interaction between HTML and CSS.</p>
-          
+          <a class="anchor" id="Prerequisite"></a>
           <h2>Pre-Requisite</h2>
           <p>In order to follow and do some of the exercises within this tutorial, you will need a text editor. It can be a basic note editor such as as Notepad or TextEdit. <a href="getstarted.html#TextEditors">Click here to view the Text Editors that we recommend. </a></p>
+          <a class="anchor" id"SetupHTMLPage"></a>
+          <h2>Setting Up your HTML Page </h2>
+          <p>The first thing that needs to be done is create your html page. Create a file with the name of "index" and the extension of ".html". Index is used as the filename as most web servers look for index as the homepage. Additionally create a file call "style.css" which will be used in a later section to style the page. Once the file is created, copy and paste the HTML framework code is shown below.
+          <blockquote>
+          	<p> 
+          		&lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                	&lt;title&gt; &lt;/title&gt;<br>
+                    &lt;link href="style.css" rel="stylesheet"&gt;
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+             </p>
+             </blockquote>
+          Once this code has been pasted into the your "index.html" file, you now have a basic, blank webpage. 
+		  <a class="anchor" id="SetPageTitle"></a>
+          <h3> Setting the Page's Title </h3>
+          Between the Title Tags in your HTML document, enter in your name as we are creating a profile page for yourself. Once entered, your code should look similar to below. Changes are shown in red.
+          <blockquote>
+          	<p> 
+          		&lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                	&lt;title&gt; <span class="changes">Andrew</span> &lt;/title&gt;<br>
+                    &lt;link href="style.css" rel="stylesheet"&gt;
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+             </p>
+             </blockquote>
+             If you view your webpage in a web browser, which is recommended, you can see now that the title bar should display your name.
+          <a class="anchor" id="InsertPageContent"></a>
+          <h3> Insert Page Content </h3>
+          In the profile page we will have four main elements: your name in big letters, a picture of you, a short description or biography about yourself and a link to your social media account (i.e. Facebook, Twitter, LinkedIn, etc). First thing is to add your name in big letters. To do this, we will use the "H1" tag. So in the body add a "H1" tag, your name and closing "H1" tag. <br><br>Next thing is we want to insert a line break as we want the four elements on separate lines. To do this, we will add a "BR" tag. Once we do that, we will then insert our image. To insert an image we will type "img src="image.png". Note that unlike most tags, for images there is no closing tag. At the end, add an a break line.<br><br> Next thing we are going to use the "H2" tags for your bio and short description. We are using the H2 tags as we do not want as much emphasis compared to your name and we are taking it to the next level down. Add a break at the end.<br><br>Finally, add an image icon of the social media account you are using and wrap a link tag around it. Hopefully, your code will look similar to the code that is shown below.
+          <blockquote>
+          	<p> 
+          		&lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                	&lt;title&gt; Andrew &lt;/title&gt;<br>
+                    &lt;link href="style.css" rel="stylesheet"&gt;
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br><span class="changes">
+&lt;h1&gt; Andrew &lt;/h1&gt;&lt;br&gt;<br>
+&lt;img src="Andrew.png"&gt;&lt;br&gt;<br>
+&lt;h2&gt; Short description about myself is that I am a student doing this as a part of my final project&lt;/h2&gt;&lt;br&gt;<br>
+&lt;a href="http://www.google.com"&gt;&lt;img src="Facebook.png"&gt;&lt;/a&gt;</span><br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+             </p>
+             </blockquote>
+             If so, congratulations, you have completed making your first webpage! However, if you look at it in the web browser, it looks plain since it is a bunch of text and images sitting on a page with no real design. The next section will show how to make the page look much more appealing. 
+          </p>
+          <a class="anchor" id="SetupCSSFile"></a>
+          <h2>CSS To Style Page </h2>
+          <p>Open up your "style.css" page that was created earlier as we will now begin to style the page.</p> The first thing that is going to be done is change the background color and center everything on the page. To do this, we will use the following code shown below:
+          <blockquote>
+          	<p> body{ background-color: black; text-align: center;} </p>
+          </blockquote>  
+          If you preview your webpage, your text is no longer readable since the font color is same as the background. To solve this issue, we will change the color of the H1 and H2 tags as white. Below is code of how to do so.	
+          <blockquote>
+          	<p> H1, H2{ color: white;} </p>
+          </blockquote>  
+          Last thing we are going to do is change the font of your name to Helvetica to make it stand out even more. To do this we will use the "font-family" in CSS. Code is shown below of how to do so.
+          <blockquote>
+          	<p> H1{ Font-Family: Helvetica;} </p>
+          </blockquote>  
+          If you have completed all of that, congratulations! Your code should look like the example below:
+          <blockquote>
+          	<p>body{ background-color: black; text-align: center;} <br>H1, H2{ color: white;}<br>H1{ Font-Family: Helvetica;} </p>
+          </blockquote>  
+           You have successfully create a simple and colorful web page about yourself using HTML and CSS. The tutorial you have just completed is a basic tutorial that provides the bare minimum in applying HTML and CSS. To learn more advanced techniques about HTML and CSS and even JavaScript and PHP, <a href="index.html"><strong>click here to sign up via the homepage </strong></a> to get access to advanced and exclusive content. Or sign in to get access if you already have an account. <br>
         </div>
         <div class="col-md-4">
           <h3>Table of Contents</h3>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+          <h5><a href="#BeginnersTutorial">Beginner's Tutorial</a></h5>
+          <h5><a href="#Prerequisite">Pre-Requisite</a></h5>
+          <h5><a href="#SetupHTMLPage">Setting Up HTML Page</a></h5>
+          <h6><a href="#SetPageTitle">Set Page Title</a></h6>
+          <h6><a href="#InsertPageContent">Insert Page Content</a></h6>
+          <h5><a href="#SetupCSSFile">CSS To Style Page</a></h5>
        </div>
       </div>
 
